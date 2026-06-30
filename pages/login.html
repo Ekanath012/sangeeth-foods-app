@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login | Sangeeth Foods</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/auth.css">
+</head>
+
+<body>
+
+<div class="auth-container">
+
+    <!-- LEFT PANEL -->
+
+    <div class="auth-left">
+
+        <div class="auth-overlay"></div>
+
+        <div class="brand-content">
+
+            <img
+                src="../assets/images/logo.png"
+                alt="Sangeeth Foods Logo"
+                class="brand-logo">
+
+            <h1>
+
+                Welcome to
+                <span>Sangeeth Foods</span>
+
+            </h1>
+
+            <p>
+
+                Fresh • Fast • Flavorful
+
+            </p>
+
+            <div class="brand-features">
+
+                <div class="feature">
+
+                    <i class="fa-solid fa-seedling"></i>
+
+                    <span>100% Vegetarian</span>
+
+                </div>
+
+                <div class="feature">
+
+                    <i class="fa-solid fa-clock"></i>
+
+                    <span>Quick Delivery</span>
+
+                </div>
+
+                <div class="feature">
+
+                    <i class="fa-solid fa-shield-heart"></i>
+
+                    <span>Fresh Everyday</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- RIGHT PANEL -->
+
+    <div class="auth-right">
+
+        <div class="login-card">
+
+            <div class="login-header">
+
+                <h2>
+
+                    Welcome Back 👋
+
+                </h2>
+
+                <p>
+
+                    Sign in to continue your delicious journey.
+
+                </p>
+
+            </div>
+
+            <!-- MOBILE LOGIN -->
+
+            <form
+                id="mobileLoginForm"
+                autocomplete="off">
+
+                <label>
+
+                    Mobile Number
+
+                </label>
+
+                <div class="phone-input">
+
+                    <div class="country-code">
+
+                        <img
+                            src="../assets/images/canada.png"
+                            alt="Canada">
+
+                        <span>
+
+                            +1
+
+                        </span>
+
+                    </div>
+
+                    <input
+                        type="tel"
+                        id="mobileNumber"
+                        maxlength="10"
+                        placeholder="Enter your mobile number"
+                        required>
+
+                </div>
+
+                <button
+                    type="submit"
+                    class="primary-btn auth-btn">
+
+                    Continue
+
+                </button>
+
+            </form>
+
+            <div class="divider">
+
+                <span>
+
+                    OR
+
+                </span>
+
+            </div>
+
+            <button
+                class="google-btn"
+                type="button">
+
+                <i class="fa-brands fa-google"></i>
+
+                Continue with Google
+
+            </button>
+
+            <button
+                class="email-btn"
+                type="button"
+                onclick="window.location.href='email-login.html'">
+
+                <i class="fa-solid fa-envelope"></i>
+
+                Continue with Email
+
+            </button>
+
+            <div class="login-extra">
+
+                <p>
+
+                    Don't have an account?
+
+                    <a href="register.html">
+
+                        Create Account
+
+                    </a>
+
+                </p>
+
+            </div>
+
+            <div class="privacy-box">
+
+                <i class="fa-solid fa-lock"></i>
+
+                <p>
+
+                    By continuing, you agree to the
+                    <a href="#">Terms & Conditions</a>
+                    and
+                    <a href="#">Privacy Policy</a>.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="../assets/js/auth.js"></script>
+
+</body>
+
+</html>           

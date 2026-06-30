@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Verify OTP | Sangeeth Foods</title>
+
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/auth.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="auth-container">
+
+    <!-- LEFT SIDE -->
+
+    <div class="auth-left">
+
+        <div class="auth-overlay"></div>
+
+        <div class="brand-content">
+
+            <img
+                src="../assets/images/logo.png"
+                class="brand-logo"
+                alt="Sangeeth Foods">
+
+            <h1>
+
+                Verify
+
+                <span>
+
+                    Your Number
+
+                </span>
+
+            </h1>
+
+            <p>
+
+                We have sent a verification code
+                to your registered mobile number.
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- RIGHT SIDE -->
+
+    <div class="auth-right">
+
+        <div class="login-card">
+
+            <div class="login-header">
+
+                <h2>
+
+                    OTP Verification
+
+                </h2>
+
+                <p>
+
+                    Enter the 6-digit code sent to
+
+                    <strong>
+
+                        +1 ••• ••• ••••
+
+                    </strong>
+
+                </p>
+
+            </div>
+
+            <form id="otpForm">
+
+                <div class="otp-container">
+
+                    <input type="text" maxlength="1" class="otp-input">
+
+                    <input type="text" maxlength="1" class="otp-input">
+
+                    <input type="text" maxlength="1" class="otp-input">
+
+                    <input type="text" maxlength="1" class="otp-input">
+
+                    <input type="text" maxlength="1" class="otp-input">
+
+                    <input type="text" maxlength="1" class="otp-input">
+
+                </div>
+
+                <button
+                    type="submit"
+                    class="auth-btn">
+
+                    Verify OTP
+
+                </button>
+
+            </form>
+
+            <div class="otp-footer">
+
+                <p>
+
+                    Didn't receive the code?
+
+                </p>
+
+                <button
+                    class="resend-btn"
+                    type="button">
+
+                    Resend OTP (30s)
+
+                </button>
+
+            </div>
+
+               <div class="divider">
+
+                <span>
+
+                    Need Help?
+
+                </span>
+
+            </div>
+
+            <button
+                type="button"
+                class="email-btn"
+                onclick="window.location.href='login.html'">
+
+                <i class="fa-solid fa-arrow-left"></i>
+
+                Back to Login
+
+            </button>
+
+            <div class="privacy-box">
+
+                <i class="fa-solid fa-circle-info"></i>
+
+                <p>
+
+                    Never share your OTP with anyone.
+                    Sangeeth Foods will never ask for your OTP over
+                    phone calls, messages or emails.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="../assets/js/auth.js"></script>
+
+</body>
+
+</html>         
