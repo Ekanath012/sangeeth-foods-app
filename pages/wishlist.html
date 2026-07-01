@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Wishlist | Sangeeth Foods</title>
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet"
+          href="../assets/css/main.css">
+
+    <link rel="stylesheet"
+          href="../assets/css/wishlist.css">
+
+</head>
+
+<body>
+
+<!-- ==========================
+NAVBAR
+========================== -->
+
+<header class="navbar">
+
+    <div class="container">
+
+        <a href="../index.html"
+           class="logo">
+
+            <img src="../assets/images/logo/logo.png"
+                 alt="Logo">
+
+            <h2>Sangeeth Foods</h2>
+
+        </a>
+
+        <nav>
+
+            <ul>
+
+                <li><a href="../index.html">Home</a></li>
+
+                <li><a href="menu.html">Menu</a></li>
+
+                <li><a class="active"
+                       href="wishlist.html">Wishlist</a></li>
+
+                <li><a href="cart.html">Cart</a></li>
+
+            </ul>
+
+        </nav>
+
+        <div class="nav-icons">
+
+            <button>
+
+                <i class="fa-regular fa-heart"></i>
+
+            </button>
+
+            <button>
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+                <span id="cartCount">
+
+                    0
+
+                </span>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+<!-- ==========================
+HERO
+========================== -->
+
+<section class="wishlist-hero">
+
+    <div class="container">
+
+        <h1>
+
+            ❤️ My Wishlist
+
+        </h1>
+
+        <p>
+
+            Save your favourite dishes and order them anytime.
+
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ==========================
+SEARCH BAR
+========================== -->
+
+<section class="wishlist-toolbar">
+
+    <div class="container">
+
+        <div class="toolbar">
+
+            <input type="text"
+                   id="searchFood"
+                   placeholder="Search favourite dishes...">
+
+            <select id="sortFood">
+
+                <option value="default">
+
+                    Sort
+
+                </option>
+
+                <option value="low">
+
+                    Price : Low → High
+
+                </option>
+
+                <option value="high">
+
+                    Price : High → Low
+
+                </option>
+
+                <option value="rating">
+
+                    Highest Rated
+
+                </option>
+
+            </select>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==========================
+WISHLIST GRID
+========================== -->
+
+<section class="wishlist">
+
+<div class="container">
+
+<div
+class="wishlist-grid"
+id="wishlistGrid">
+
+<!-- Card 1 -->
+
+<div class="wishlist-card">
+
+<div class="wishlist-image">
+
+<img
+src="../assets/images/foods/paneer-butter-masala.jpg"
+alt="Paneer">
+
+<span>
+
+20% OFF
+
+</span>
+
+</div>
+
+<div class="wishlist-content">
+
+<h2>
+
+Paneer Butter Masala
+
+</h2>
+
+<div class="rating">
+
+★★★★★
+
+<span>
+
+4.9 (642)
+
+</span>
+
+</div>
+
+<p>
+
+Rich creamy tomato gravy with soft paneer cubes.
+
+</p>
+
+<div class="price">
+
+<h3>
+
+CAD 15.99
+
+</h3>
+
+<del>
+
+18.99
+
+</del>
+
+</div>
+
+<div class="wishlist-buttons">
+
+<button class="cartBtn">
+
+<i class="fa-solid fa-cart-shopping"></i>
+
+Move To Cart
+
+</button>
+
+<button class="removeBtn">
+
+<i class="fa-solid fa-trash"></i>
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Card 2 -->
+
+<div class="wishlist-card">
+
+<div class="wishlist-image">
+
+<img
+src="../assets/images/foods/veg-biryani.jpg"
+alt="Biryani">
+
+<span>
+
+Popular
+
+</span>
+
+</div>
+
+<div class="wishlist-content">
+
+<h2>
+
+Veg Dum Biryani
+
+</h2>
+
+<div class="rating">
+
+★★★★★
+
+<span>
+
+4.8 (420)
+
+</span>
+
+</div>
+
+<p>
+
+Authentic dum cooked basmati rice with vegetables.
+
+</p>
+
+<div class="price">
+
+<h3>
+
+CAD 16.99
+
+</h3>
+
+<del>
+
+19.99
+
+</del>
+
+</div>
+
+<div class="wishlist-buttons">
+
+<button class="cartBtn">
+
+<i class="fa-solid fa-cart-shopping"></i>
+
+Move To Cart
+
+</button>
+
+<button class="removeBtn">
+
+<i class="fa-solid fa-trash"></i>
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Card 3 -->
+
+<div class="wishlist-card">
+
+    <div class="wishlist-image">
+
+        <img src="../assets/images/foods/masala-dosa.jpg"
+             alt="Masala Dosa">
+
+        <span>Chef's Choice</span>
+
+    </div>
+
+    <div class="wishlist-content">
+
+        <h2>Masala Dosa</h2>
+
+        <div class="rating">
+
+            ★★★★★
+
+            <span>4.9 (850)</span>
+
+        </div>
+
+        <p>
+
+            Crispy golden dosa served with fresh coconut chutney and hot sambar.
+
+        </p>
+
+        <div class="price">
+
+            <h3>CAD 13.99</h3>
+
+            <del>15.99</del>
+
+        </div>
+
+        <div class="wishlist-buttons">
+
+            <button class="cartBtn">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+                Move To Cart
+
+            </button>
+
+            <button class="removeBtn">
+
+                <i class="fa-solid fa-trash"></i>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Card 4 -->
+
+<div class="wishlist-card">
+
+    <div class="wishlist-image">
+
+        <img src="../assets/images/foods/filter-coffee.jpg"
+             alt="Coffee">
+
+        <span>New</span>
+
+    </div>
+
+    <div class="wishlist-content">
+
+        <h2>Filter Coffee</h2>
+
+        <div class="rating">
+
+            ★★★★★
+
+            <span>5.0 (220)</span>
+
+        </div>
+
+        <p>
+
+            Authentic South Indian filter coffee brewed fresh every order.
+
+        </p>
+
+        <div class="price">
+
+            <h3>CAD 5.99</h3>
+
+            <del>6.99</del>
+
+        </div>
+
+        <div class="wishlist-buttons">
+
+            <button class="cartBtn">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+                Move To Cart
+
+            </button>
+
+            <button class="removeBtn">
+
+                <i class="fa-solid fa-trash"></i>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+</div>
+
+<!-- ==========================
+EMPTY WISHLIST
+========================== -->
+
+<div class="empty-wishlist">
+
+    <img src="../assets/images/icons/empty-wishlist.png"
+         alt="Empty Wishlist">
+
+    <h2>
+
+        Nothing in your wishlist yet
+
+    </h2>
+
+    <p>
+
+        Start exploring delicious dishes and save your favourites.
+
+    </p>
+
+    <a href="menu.html"
+       class="shop-btn">
+
+        Browse Menu
+
+    </a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ==========================
+NEWSLETTER
+========================== -->
+
+<section class="newsletter">
+
+    <div class="container">
+
+        <div class="newsletter-box">
+
+            <h2>
+
+                Stay Updated
+
+            </h2>
+
+            <p>
+
+                Subscribe to receive offers, festival specials and new dishes.
+
+            </p>
+
+            <form>
+
+                <input type="email"
+                       placeholder="Enter your email">
+
+                <button>
+
+                    Subscribe
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==========================
+FOOTER
+========================== -->
+
+<footer>
+
+<div class="container">
+
+<div class="footer-grid">
+
+<div>
+
+<img src="../assets/images/logo/logo.png"
+     class="footer-logo"
+     alt="Logo">
+
+<p>
+
+Fresh vegetarian food prepared with love and delivered across Québec.
+
+</p>
+
+</div>
+
+<div>
+
+<h3>
+
+Quick Links
+
+</h3>
+
+<ul>
+
+<li><a href="../index.html">Home</a></li>
+
+<li><a href="menu.html">Menu</a></li>
+
+<li><a href="cart.html">Cart</a></li>
+
+<li><a href="profile.html">Profile</a></li>
+
+</ul>
+
+</div>
+
+<div>
+
+<h3>
+
+Contact
+
+</h3>
+
+<p>
+
+📍 Saint-Laurent, Québec
+
+</p>
+
+<p>
+
+📞 +1 (416) 555-0199
+
+</p>
+
+<p>
+
+✉ support@sangeethfoods.ca
+
+</p>
+
+</div>
+
+<div>
+
+<h3>
+
+Follow Us
+
+</h3>
+
+<div class="social-icons">
+
+<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+
+<a href="#"><i class="fa-brands fa-instagram"></i></a>
+
+<a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+
+<a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+
+</div>
+
+</div>
+
+</div>
+
+<hr>
+
+<p class="copyright">
+
+© 2026 Sangeeth Foods. All Rights Reserved.
+
+</p>
+
+</div>
+
+</footer>
+
+<script src="../assets/js/wishlist.js"></script>
+
+</body>
+
+</html>
